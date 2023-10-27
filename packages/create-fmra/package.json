@@ -1,11 +1,11 @@
 {
   "author": "Matthew Mason",
   "bin": {
-    "create-fmra": "bin/cfmra.js"
+    "create-fmrt": "bin/cfmrt.js"
   },
   "dependencies": {
-    "@cfmra/eslint": "^0.0.1",
-    "@cfmra/vite": "^0.0.1",
+    "@cfmrt/eslint": "^0.0.1",
+    "@cfmrt/vite": "^0.0.1",
     "cac": "^6.7.14",
     "citty": "^0.1.4",
     "commander": "^11.1.0",
@@ -59,16 +59,15 @@
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "name": "@cfmra/create-fmra",
-  "packageManager": "pnpm@8.6.12",
+  "name": "@cfmrt/create-fmra",
   "repository": {
-    "directory": "packages/create-fmra",
+    "directory": "packages/create-fmrt",
     "type": "git",
-    "url": "git+https://github.com/metrikspacex/cfmra.git"
+    "url": "git+https://github.com/metrikspacex/cfmrt.git"
   },
   "scripts": {
     "build": "unbuild",
-    "create-fmra": "jiti ./src/cli",
+    "create-fmrt": "jiti ./src/cli",
     "dev": "unbuild --stub",
     "format": "",
     "lint": "",

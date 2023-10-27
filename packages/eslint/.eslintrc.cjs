@@ -1,9 +1,16 @@
-const { builtinModules } = require("node:module");
 const { defineConfig } = require("eslint-define-config");
-const _package = require("./package.json");
-const crmaEslint = require("./dist/index.cjs");
-
 module.exports = defineConfig({
-  plugin: [crmaEslint],
+	extends: ["./dist/index.cjs"],
+  parserOptions: {
+    project: [`${__dirname}/tsconfig.json`],
+    tsconfigRootDir: __dirname
+  },
+	settings: {
+		"import/resolver": {
+			typescript: {
+				project: [`${__dirname}/tsconfig.json`],
+			},
+		},
+	},
   root: true,
 });

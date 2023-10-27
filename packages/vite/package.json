@@ -1,21 +1,35 @@
 {
   "author": "Matthew Mason",
-  "dependencies": { },
+  "dependencies": {
+    "@cfmrt/eslint": "^0.0.1"
+  },
   "description": "",
   "devDependencies": { },
   "engines": {
-    "node": "^18.0.0 || >=20.0.0"
+    "node": ">=18.0.0"
   },
   "files": [ ],
   "license": "MIT",
-  "name": "@cfmra/vite",
-  "packageManager": "pnpm@8.6.12",
+  "name": "@cfmrt/vite",
+  "peerDependencies": {
+    "eslint": "^8.7.0",
+    "typescript": "^4 || ^5"
+  },
   "repository": {
     "directory": "packages/vite",
     "type": "git",
-    "url": "git+https://github.com/metrikspacex/cfmra.git"
+    "url": "git+https://github.com/metrikspacex/cfmrt.git"
   },
-  "scripts": { },
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "format": "",
+    "lint": "",
+    "play": "jiti playground",
+    "prepack": "pnpm run build",
+    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
+    "test:types": "tsc --noEmit --skipLibCheck"
+  },
   "sideEffects": false,
   "type": "module",
   "version": "0.0.1"

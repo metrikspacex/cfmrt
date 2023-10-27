@@ -4,12 +4,7 @@ export default defineBuildConfig({
   alias: {},
   clean: true,
   declaration: true,
-  entries: [
-    {
-      input: "./src/index.ts",
-      outDir: "dist",
-    }
-  ],
+  entries: ["src/index"],
   hooks: {},
   outDir: "dist",
   rollup: {
