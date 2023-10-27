@@ -1,0 +1,22 @@
+{
+  "author": "Matthew Mason",
+  "dependencies": { },
+  "description": "",
+  "devDependencies": { },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "files": [ ],
+  "license": "MIT",
+  "name": "@cfmra/vite",
+  "packageManager": "pnpm@8.6.12",
+  "repository": {
+    "directory": "packages/vite",
+    "type": "git",
+    "url": "git+https://github.com/metrikspacex/cfmra.git"
+  },
+  "scripts": { },
+  "sideEffects": false,
+  "type": "module",
+  "version": "0.0.1"
+}

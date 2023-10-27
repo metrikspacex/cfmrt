@@ -1,0 +1,84 @@
+{
+  "author": "Matthew Mason",
+  "bin": {
+    "create-fmra": "bin/cfmra.js"
+  },
+  "dependencies": {
+    "@cfmra/eslint": "^0.0.1",
+    "@cfmra/vite": "^0.0.1",
+    "cac": "^6.7.14",
+    "citty": "^0.1.4",
+    "commander": "^11.1.0",
+    "cpr": "^3.0.1",
+    "cross-spawn": "^7.0.3",
+    "detype": "^0.6.3",
+    "inquirer": "^9.2.11",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "mkdirp": "^3.0.1",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2",
+    "rimraf": "^5.0.5"
+  },
+  "description": "",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.6",
+    "@types/minimist": "^1.2.4",
+    "@types/node": "^20.8.9",
+    "@types/prompts": "^2.4.7",
+    "jiti": "^1.20.0",
+    "tsup": "^7.2.0",
+    "tsx": "^3.14.0",
+    "unbuild": "^2.0.0"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/index.mjs",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/index.cjs",
+        "types": "./dist/index.d.cts"
+      }
+    },
+    "./package.json": "./package.json",
+    "./types/*": {
+      "types": "./types/*"
+    }
+  },
+  "files": [
+    "bin",
+    "dist",
+    "templates-*",
+    "types"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "name": "@cfmra/create-fmra",
+  "packageManager": "pnpm@8.6.12",
+  "repository": {
+    "directory": "packages/create-fmra",
+    "type": "git",
+    "url": "git+https://github.com/metrikspacex/cfmra.git"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "create-fmra": "jiti ./src/cli",
+    "dev": "unbuild --stub",
+    "format": "",
+    "lint": "",
+    "play": "jiti playground",
+    "prepack": "pnpm run build",
+    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
+    "test:types": "tsc --noEmit --skipLibCheck"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.0.1"
+}

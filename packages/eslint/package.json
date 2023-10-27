@@ -1,0 +1,63 @@
+{
+  "author": "Matthew Mason",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-define-config": "^1.24.1",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-regexp": "^2.1.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.21.0",
+    "eslint-plugin-sort-keys": "^2.3.5",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-plugin-vitest": "^0.3.8"
+  },
+  "description": "",
+  "devDependencies": {
+    "jiti": "^1.20.0",
+    "tsup": "^7.2.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [ ],
+  "license": "MIT",
+  "name": "@cfmra/eslint",
+  "peerDependencies": {
+    "eslint": "^8.7.0",
+    "typescript": "^4 || ^5"
+  },
+  "repository": {
+    "directory": "packages/eslint",
+    "type": "git",
+    "url": "git+https://github.com/metrikspacex/cfmra.git"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "create-fmra": "jiti ./src/cli",
+    "dev": "unbuild --stub",
+    "format": "",
+    "lint": "",
+    "play": "jiti playground",
+    "prepack": "pnpm run build",
+    "test": "pnpm lint && pnpm test:types && vitest run --coverage",
+    "test:types": "tsc --noEmit --skipLibCheck"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "version": "0.0.1"
+}
