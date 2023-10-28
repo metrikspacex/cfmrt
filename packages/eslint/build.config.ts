@@ -8,7 +8,11 @@ export default defineBuildConfig({
     {
       input: "./src/index.ts",
       outDir: "dist",
-    }
+    },
+    {
+      input: "./src/patch.ts",
+      outDir: "dist",
+    },
   ],
   hooks: {},
   outDir: "dist",

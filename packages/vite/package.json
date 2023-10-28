@@ -1,10 +1,13 @@
 {
   "author": "Matthew Mason",
   "dependencies": {
-    "@cfmrt/eslint": "^0.0.1"
+    "@cfmrt/eslint": "^0.0.1",
+    "eslint-define-config": "^1.24.1"
   },
   "description": "",
-  "devDependencies": { },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  },
   "engines": {
     "node": ">=18.0.0"
   },
