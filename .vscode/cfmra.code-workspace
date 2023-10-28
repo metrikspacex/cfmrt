@@ -2,27 +2,28 @@
   "extensions": {
     "recommendations": [
       "dbaeumer.vscode-eslint",
-      "deskbtm.colorful-monorepo",
       "esbenp.prettier-vscode",
-      "formulahendry.auto-close-tag",
-      "steoates.autoimport"
     ]
   },
   "folders": [
     {
-      "name": "❔  @cfmra/monorepo",
+      "name": "@cfmrt/monorepo",
       "path": ".."
     },
     {
-      "name": "❔  @cfmra/create-fmra",
+      "name": "@cfmrt/create-fmra",
       "path": "../packages/create-fmra"
     },
     {
-      "name": "🌱  @cfmra/eslint",
+      "name": "@cfmrt/create-fmra-template",
+      "path": "../packages/create-fmra/template"
+    },
+    {
+      "name": "@cfmrt/eslint",
       "path": "../packages/eslint"
     },
     {
-      "name": "❔  @cfmra/vite",
+      "name": "@cfmrt/vite",
       "path": "../packages/vite"
     }
   ],
@@ -282,41 +283,6 @@
     "workbench.editorAssociations": {
       "*.md": "vscode.markdown.preview.editor"
     },
-
-    // Colorful Mono
-    "ColorfulMonorepo.arrange.enabled": false,
-    "ColorfulMonorepo.arrange.init": false,
-    "ColorfulMonorepo.colorize.enabled": false,
-    "ColorfulMonorepo.workspaces.collection": [
-      {
-        "path": "/home/metrikspacex/.workspace/cfmra",
-        "packageName": "@cfmra/monorepo",
-        "label": "🌱  @cfmra/monorepo",
-        "foreground": "#ffffff",
-        "background": "#4c5d4f"
-      },
-      {
-        "path": "/home/metrikspacex/.workspace/cfmra/packages/create-fmra",
-        "packageName": "@cfmra/create-fmra",
-        "label": "🍀  @cfmra/create-fmra",
-        "foreground": "#000000",
-        "background": "#d0bf55"
-      },
-      {
-        "path": "/home/metrikspacex/.workspace/cfmra/packages/eslint",
-        "packageName": "@cfmra/eslint",
-        "label": "🍀  @cfmra/eslint",
-        "foreground": "#ffffff",
-        "background": "#000000"
-      },
-      {
-        "path": "/home/metrikspacex/.workspace/cfmra/packages/vite",
-        "packageName": "@cfmra/vite",
-        "label": "🍀  @cfmra/vite",
-        "foreground": "#ffffff",
-        "background": "#b8213f"
-      }
-    ],
 
     // Tailwind
     "tailwindCSS.rootFontSize": 10,
